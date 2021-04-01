@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HIM ASSESEMENT</title>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <div>
+    <h2>HIM ASSESMENT</h2>
+    <p>Inspect the HTML page and direct to console to see the results</p>
+  </div>
+<script>
+for (let n = 1; n <=100; n++) {
+    if ((n % 3 === 0 || n.toString().split('').find(element => element === '3')) &&
+      (n % 7 === 0 || n.toString().split('').find(element => element === '7'))) {
+      console.log(n+" snap crackle")
+    }
+    else if ((n % 3 === 0 || n.toString().split('').find(element => element === '3'))){
+        console.log(n+" snap")
+    }else if((n % 7 === 0 || n.toString().split('').find(element => element === '7'))){
+        console.log(n+ " crackle")
+    }else{
+        console.log(n.toString())
+    }
+  }
+
+</script>
+</body>
+</html>
